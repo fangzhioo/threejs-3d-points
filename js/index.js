@@ -1,5 +1,5 @@
 // 获取粒子效果的js
-const webglJsPath = "/js/webgl.js";
+const webglJsPath = "./webgl.js";
 const defaultPopImg =
   "//game.gtimg.cn/images/up/act/a20170301pre/images/three/banner0.jpg";
 const bgMp3 = "//game.gtimg.cn/images/up/act/a20170301pre/media/bg.mp3";
