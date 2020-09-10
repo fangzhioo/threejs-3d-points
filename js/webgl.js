@@ -12,7 +12,7 @@ const webglBanners = [
   "//game.gtimg.cn/images/up/act/a20170301pre/images/three/banner3.png",
   "//game.gtimg.cn/images/up/act/a20170301pre/images/three/banner4.png",
 ];
-const gradientPng = "../img/gradient.png";
+const gradientPng = "./img/gradient.png";
 
 (function () {
   // init
