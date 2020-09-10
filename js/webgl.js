@@ -1,10 +1,10 @@
 const webglJsons = [
-  "../json/cpgame3.json",
-  "../json/cpac5.json",
-  "../json/cpbook2.json",
-  "../json/cpmovie4.json",
-  "../json/cpkv3.json",
-  "../json/qr.json",
+  "./json/cpgame3.json",
+  "./json/cpac5.json",
+  "./json/cpbook2.json",
+  "./json/cpmovie4.json",
+  "./json/cpkv3.json",
+  "./json/qr.json",
 ];
 const webglBanners = [
   "//game.gtimg.cn/images/up/act/a20170301pre/images/three/banner1.png",
