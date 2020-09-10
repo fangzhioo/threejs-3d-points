@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>3D粒子效果 -仿Tencent</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta name="Description" content="3D粒子效果" />
+    <meta name="Keywords" content="3D粒子效果" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css"
+      integrity="sha512-YcLU32JXqopGSqbDbbAxxeUcZZpGiXIJW9I8PizsUdy9RDt2eM/kmPh/XSiGTHLHFQS19TvI76ElpTcUucczoA=="
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./css/fipclock.css" /> -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="fp-viewing-f">
+    <p class="chromeframe">
+      您当前浏览器内核不支持WebGL，请升级您的浏览器，或使用<a
+        href="http://www.google.cn/chrome/"
+        >Google Chrome</a
+      >、<a href="http://www.firefox.com.cn/download/">Firefox</a
+      >等高级浏览器，将会得到更好的体验！
+    </p>
+    <div id="loading">
+      <div class="loadingwrapper">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="loadingtxt">
+        <span>正在进入</span>
+        <i>0%</i>
+        <b class="btn-introbox">进入</b>
+      </div>
+    </div>
+    <div class="fullpage fullpage-wrapper" id="fullpage">
+      <div class="section page1 active fp-section fp-table" data-anchor="g">
+        <div class="fp-tableCell">
+          <div class="txt">
+            <div class="txt-img">
+              <p>人们渴望快乐</p>
+              <p>但创作快乐的人</p>
+              <p>面对的是最枯燥的代码、数值和徒图形</p>
+            </div>
+            <!-- <img
+              src="./UP2017腾讯互动娱乐年度发布会 - 腾讯互动娱乐_files/298692010400560.png"
+            /> -->
+          </div>
+          <div class="dots">
+            <i class="dot dot-1" title="QQ飞车手游"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://speed.qq.com/cp/a20170328sqyx/index.htm"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/qqfeicheshouyou.jpg"
+            /></i>
+            <i class="dot dot-2" title="TGP腾讯游戏平台"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://tgp.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/tgptengxunyouxipingtai.jpg"
+            /></i>
+            <i class="dot dot-3" title="穿越火线"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://cf.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/chuanyuehuoxian.jpg"
+            /></i>
+            <i class="dot dot-4" title="穿越火线手游"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://cfm.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/chuanyuehuoxianshouyou.jpg"
+            /></i>
+            <i class="dot dot-5" title="地下城与勇士"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://dnf.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/dixiachengyuyongshi.jpg"
+            /></i>
+            <i class="dot dot-6" title="欢乐斗地主"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://hlddz.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/huanledoudizhu.jpg"
+            /></i>
+            <i class="dot dot-7" title="天天爱消除"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://peng.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/tiantianaixiaochu.jpg"
+            /></i>
+            <i class="dot dot-8" title="天天炫斗"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://ttxd.qq.com/cp/a20170302batepc/index.html"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/tiantianxuandou.jpg"
+            /></i>
+            <i class="dot dot-9" title="腾讯游戏"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="javascript:;"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/g/youxitall.jpg"
+            /></i>
+          </div>
+        </div>
+      </div>
+      <div class="section page2 fp-section fp-table" data-anchor="a">
+        <div class="fp-tableCell">
+          <div class="txt">
+            <div class="txt-img">
+              <p>人们渴望快乐</p>
+              <p>但创作快乐的人</p>
+              <p>面对的是最枯燥的代码、数值和徒图形</p>
+            </div>
+            <!-- <img
+              src="./UP2017腾讯互动娱乐年度发布会 - 腾讯互动娱乐_files/298734013640422.png"
+            /> -->
+          </div>
+          <div class="dots">
+            <i class="dot dot-1" title="代嫁丞相"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://ac.qq.com/Comic/ComicInfo/id/552624"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/a/daijiachengxiang.jpg"
+            /></i>
+            <i class="dot dot-2" title="狐妖小红娘"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://ac.qq.com/Comic/ComicInfo/id/518333"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/a/huyaoxiaohongniang.jpg"
+            /></i>
+            <i class="dot dot-3" title="腾讯动漫"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://ac.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/a/tengxundongman.jpg"
+            /></i>
+            <i class="dot dot-4" title="腾讯动漫"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="javascript:;"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/a/actall.jpg"
+            /></i>
+            <i class="dot dot-5" title="同居男闺蜜"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://ac.qq.com/Comic/ComicInfo/id/540432"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/a/tongjunanguimi.jpg"
+            /></i>
+            <i class="dot dot-6" title="一人之下"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://ac.qq.com/Comic/comicInfo/id/531490"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/a/yirenzhixia.jpg"
+            /></i>
+          </div>
+        </div>
+      </div>
+      <div class="section page3 fp-section fp-table" data-anchor="l">
+        <div class="fp-tableCell">
+          <div class="txt">
+            <div class="txt-img">
+              <p>人们渴望快乐</p>
+              <p>但创作快乐的人</p>
+              <p>面对的是最枯燥的代码、数值和徒图形</p>
+            </div>
+            <!-- <img
+              src="./UP2017腾讯互动娱乐年度发布会 - 腾讯互动娱乐_files/298712013780404.png"
+            /> -->
+          </div>
+          <div class="dots">
+            <i class="dot dot-1" title="`QQ阅读"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://www.yuewen.com/app.html#appqq"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/qqyuedu.jpg"
+            /></i>
+            <i class="dot dot-2" title="`创世中文网"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://chuangshi.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/chuangshizhongwenwang.jpg"
+            /></i>
+            <i class="dot dot-3" title="`起点女生网"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://www.qdmm.com/Default.aspx"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/qidiannvshengwang.jpg"
+            /></i>
+            <i class="dot dot-4" title="`起点中文网"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://www.qidian.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/qidianzhongwenwang.jpg"
+            /></i>
+            <i class="dot dot-5" title="`腾讯文学"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="javascript:;"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/tengxunwenxuetall.jpg"
+            /></i>
+            <i class="dot dot-6" title="`阅文集团"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://www.yuewen.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/yuewenjituan.jpg"
+            /></i>
+            <i class="dot dot-7" title="`云起书院"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://yunqi.qq.com/"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/l/yunqishuyuan.jpg"
+            /></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section page4 fp-section fp-table fp-completely"
+        data-anchor="f"
+      >
+        <div class="fp-tableCell">
+          <div class="txt">
+            <div class="txt-img">
+              <p>人们渴望快乐</p>
+              <p>但创作快乐的人</p>
+              <p>面对的是最枯燥的代码、数值和徒图形</p>
+            </div>
+            <!-- <img
+              src="./UP2017腾讯互动娱乐年度发布会 - 腾讯互动娱乐_files/298722013720390.png"
+            /> -->
+          </div>
+          <div class="dots">
+            <i class="dot dot-1" title="爱乐之城"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://weibo.com/tencentpictures"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/f/ailezhicheng.jpg"
+            /></i>
+            <i class="dot dot-2" title="金刚"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://weibo.com/moviekong2017?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/f/jingang.jpg"
+            /></i>
+            <i class="dot dot-3" title="腾讯影业"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://weibo.com/tencentpictures"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/f/tengxunyingye.jpg"
+            /></i>
+            <i class="dot dot-4" title="腾讯影业"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://weibo.com/tencentpictures"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/f/yingyetall.jpg"
+            /></i>
+            <i class="dot dot-5" title="择天记"
+              ><b></b
+              ><img
+                class="popimg"
+                data-href="http://weibo.com/tencentpictures"
+                data-src="//game.gtimg.cn/images/up/act/a20170301pre/images/poster/f/zetianji.jpg"
+            /></i>
+          </div>
+        </div>
+      </div>
+      <!--     <div class="section page5">
+        <div class="txt"><img src="img/298743015960398.png"></div>
+        <div class="dots">
+            <i class="dot dot-1" title="腾讯电竞"><img class="popimg" data-href="javascript:;" data-src="img/poster/e/dianjingtall.jpg"></i>
+            <i class="dot dot-2" title="腾讯电竞"><img class="popimg" data-href="javascript:;" data-src="img/poster/e/tengxundianjing.jpg"></i>
+        </div>
+    </div> -->
+      <div class="section page6 fp-section fp-table" data-anchor="u">
+        <div class="fp-tableCell">
+          <div class="slogen">
+            <img src="./img/065203017980180.png" alt="唯耐心 不负所爱" />
+          </div>
+          <div class="txt">
+            <img
+              src="./img/44202302500150.png"
+              alt="UP2017腾讯互动娱乐年度发布会"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixedcon">
+      <div class="nav">
+        <ul id="sidenav">
+          <li data-menuanchor="g" class="">
+            <a href="#g"><i class="nav-game"></i><span>Games</span></a>
+          </li>
+          <li data-menuanchor="a" class="">
+            <a href="#a"
+              ><i class="nav-brus"></i><span>Animation &amp; Comics</span></a
+            >
+          </li>
+          <li data-menuanchor="l" class="">
+            <a href="#l"><i class="nav-book"></i><span>Literature</span></a>
+          </li>
+          <li data-menuanchor="f" class="active">
+            <a href="#f"
+              ><i class="nav-film"></i><span>Film &amp; Television</span></a
+            >
+          </li>
+          <!-- <li data-menuanchor="e"><a href="#e"><i class="nav-comp"></i><span>E-sports</span></a></li> -->
+          <li data-menuanchor="u" class="">
+            <a href="#u"><i class="nav-kkvv"></i><span>UP2017</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="control">
+        <i class="fullsc show" title="全屏模式"></i>
+        <i class="music show" title="背景音乐"></i>
+      </div>
+      <div class="qrcode">
+        <i class="icon"></i>
+        <i class="txt"></i>
+        <i class="img"></i>
+      </div>
+      <div class="mouse">
+        <div class="outline"></div>
+        <div class="wheel"></div>
+      </div>
+    </div>
+    <div
+      class="pop"
+      id="pop"
+      style="perspective: 1000px; transform-style: preserve-3d"
+    >
+      <div class="pop-wrap">
+        <div
+          class="pop-in"
+          style="perspective: 1000px; transform-style: preserve-3d"
+        >
+          <div class="pop-close"></div>
+          <div class="pop-con">
+            <img />
+            <a class="btn" target="_blank" href="javascript:;">立即前往</a>
+          </div>
+          <div
+            class="shine"
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              bottom: 0px;
+              right: 0px;
+              transform: translateZ(1px);
+              z-index: 9;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var supportWebGL = (function () {
+        try {
+          var canvas = document.createElement("canvas");
+          return !!(
+            window.WebGLRenderingContext &&
+            (canvas.getContext("webgl") ||
+              canvas.getContext("experimental-webgl"))
+          );
+        } catch (e) {
+          return false;
+        }
+      })();
+      (function () {
+        if (supportWebGL) {
+        } else {
+          // console.log('OldBrowser!');
+        }
+      })();
+    </script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+      integrity="sha512-ju6u+4bPX50JQmgU97YOGAXmRMrD9as4LE05PdC3qycsGQmjGlfm041azyB1VfCXpkpt1i9gqXCT6XuxhBJtKg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- fullpage.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.extensions.min.js"
+      integrity="sha512-Y+VWe95JjTAwk5vlnn6TK10D97X4EpKEDnTqRkyhI+Lwe0v8ynJRmbt9HHUrSPMMyt4WDV/xUMvx6vWP3IZ1wA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"
+      integrity="sha512-kR5v0zdimtzYLAfP/10CNymhBY9+vEorRekWkz4Pl78yDyF/0DxYGAFwMXXE4cyr53zTz2K6vLdhABMEhLCfzw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- three.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"
+      integrity="sha512-O/Ngu/up/cPGCosSOUihbvvEyO7Ngiyin9GkQ6JIAA4Eb7XxhZDccp4xE6conGtCu45YmjCA0ibRnXmCBHXn2Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- three.js plugin -->
+    <script src="./js/three-plugin.js"></script>
+    <!-- tween.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/r7/Tween.min.js"
+      integrity="sha512-Zt8OijiRpHfK3JXTouk6pxGWnLThDaPi4+nI+GVnsND73paX8oi72/YNjDyVlE1cRoKhgKMkT8PujpH4jp2E3g=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery hover3d 插件 -->
+    <script src="./js/jquery.hover3d.js"></script>
+    <!-- base.js 拓展Object -->
+    <script src="./js/base.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
